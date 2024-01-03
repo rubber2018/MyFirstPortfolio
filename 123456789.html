@@ -1,223 +1,93 @@
-<style>
 
-.btn {
-    border: none; 
-    color: white; 
-    padding: 14px 28px; /
-    cursor: pointer; 
-	
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Register</title>
+  </head>
+  <body>
+    <input type="number" id="cash" name="cash" />
+    <div id="change-due"></div>
+    <button id="purchase-btn">Purchase</button>
 
-.button {
-  border-radius: 4px;
-  background-color: #f4511e;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 30px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 10px;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-	
-.Facebook {background-color: #4CAF50;} /* Green */
-.Facebook:hover {background-color: #46a049;}
-
-.Pebune {background-color: #ff9800;} /* Orange */
-.Pebune:hover {background: #e68a00;}
-
-.Youtube {background-color: #e7e7e7; color: black;} /* Gray */ 
-.Youtube :hover {background: #ddd;}
-
-.Adam {background-color: #4CAF50;}
-.Axwell {background-color: #ff9800;}
-.Dimash{background-color: #2196F3;}
-.Emeli{background-color: #cccc00;}
-.James {background-color: #00e699;}
-.Imagine {background-color: #0099cc;}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #f1f1f1;
-    padding: 20px;
-    font-family: Arial;
-}
-
-/* Center website */
-.main {
-    max-width: 900px;
-    margin: auto;
-}
-
-h3 {
-    font-size: 20px;
-    word-break: break-all;
-}
-
-
-.row {
-    margin: 8px -16px;
-
-}
-
-/* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .column {
-    padding: 8px;
-}
-
-/* Create four equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 25%;
-}
-
-/* Clear floats after rows */ 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Content */
-.content {
-    background-color: #cc6600;
-    padding: 10px;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 900px) {
-    .column {
-        width: 50%;
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-    .column {
-        width: 100%;}
-		
-
-	
-	
-</style>
-<html>
-<body>
-<meta name="viewport" content="width=device-width, initial-scale=1"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">>
-
-<button class="button"><span>ClickLinks</span></button>
-<h3>Amariei V.Bogdan</h3>
- <div class="btnlist">
-      <a class="btn Facebook" href="https://www.facebook.com/amariei.bogdan.7/"target="blank">Facebook</a>
-      <a class ="btn Youtube" href="https://www.youtube.com/channel/UCyviIQ12gLqES2jmBN8TifQ/"target="blank">Youtube</a>
-      <a class="btn Pebune" href="https://pebune.net/author/white_rubber/"target="blank">Pebune</a>
-
-	  <div class="main">
-
-<h3>white_rubber2@yahoo.com</h3>
-<hr>
-
-<h2>MyFirstPortfolio</h2>
-<p>Resize the browser window to see the responsive effect.</p>
-
-<!-- Portfolio Gallery Grid -->
-<div class="row">
-  <div class="column">
-    <div class="content">
-      <img src="https://scontent.fotp3-2.fna.fbcdn.net/v/t1.0-9/22549998_1437310122971464_8295646333590811291_n.jpg?oh=33bbd2c8937b81a5f592a94eb6992dbe&oe=5B1BBC6B" alt="SunLight" style="width:100%">
-      <h3>I like photography</h3>
-      <p>Since I was 8 years old, I loved pictures.I started taking photos and edit them in my own way.</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOSM9xpB98v98Jl9B0luc_B4wD_MLe9-4ZoVSICftoovyBxP1a" alt="Law" style="width:100%">
-      <h3>Law School</h3>
-      <p>I graduated law school. I am 30 years old. I've worked in law buisness for 10 years.I felt I had to make a change in my life and I decided to go into the world of IT(meaning: Css/HTML/PHP). I am an absolute rookie, I have taken lessons recently and started this project. I hope you even like the look. PS: I love playing chess and hope the links works.</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-      <img src="https://scontent.fotp3-2.fna.fbcdn.net/v/t1.0-9/21767912_1415736251795518_3542477900627943646_n.jpg?oh=249319444fbda1789904b7122d642a80&oe=5B19AF0C" alt="Crow" style="width:100%">
-      <h3>Love to paint</h3>
-      <p>I like to paint.My talent for paitting started in my 5th grade.And, yes, that is one of my art you see!.</p>
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-      <img src="https://scontent.fotp3-2.fna.fbcdn.net/v/t1.0-9/21558604_1411507345551742_1839925091233263848_n.jpg?oh=7d6541cdc3ecb5b531eab147fbb04528&oe=5B17C5E0" alt="Mountains" style="width:100%">
-      <h3>Mountains</h3>
-      <p>I like to spend my time at the country-side and love to climb mountains.That tiny blue man, it is I.</p>
-    </div>
-  </div>
-</div>
-
-<div class="content">
-  <img src="https://scontent.fotp3-2.fna.fbcdn.net/v/t1.0-9/27540405_1532029016832907_5380382544549028526_n.jpg?oh=670f42bdf2dbf21a38896aaf2d395dfa&oe=5B4920D4" alt="Moon" style="width:99%">
-  <h3>Space and Time</h3>
-  <p>I am absolute fascinated about space.I love our satelite ,,The MOOn,,. The picture was made on January 31, 2018. Super Blue moons don’t really look blue in color. Blue Moons only appear every two-and-a-half years according to NASA, and this year the “celestial rhythms” are syncing up.The American space agency said: "The January 31 full moon is special for three reasons: "It’s the third in a series of 'supermoons', when the Moon is closer to Earth in its orbit – known as perigee – and about 14 percent brighter than usual. </p>
-</div>
-
-<!-- END MAIN -->
-</div>
+    <script src="./script.js"></script>
+  </body>
 </html>
-</body>
-<!-- End of Page 1 -->
-	
 
-<div class="container-fluid">
-  <h3 class="text-primary text-center color:teal-green">If u like Music, click down-below</h3>
-  <div class="row">
-    <button class="button"><span>ClickNames</span></button>
-      <h3>Youtube-music I like:</h3>
-        <div class="btnlist">
-		<div class="col-xs-6">
-        <a class="btn Adam" href="https://www.youtube.com/watch?v=sd1cI5Lqv8E"target="black">Adam</a>
-        <a class="btn Axwell" href="https://www.youtube.com/watch?v=nbXgHAzUWB0"target="black">Axwell</a>
-        <a class="btn Dimash" href="https://www.youtube.com/watch?v=eyUu2ZS4VBA"target="black">Dimash</a>
-      </div>
-    </div>
-      <h3>Youtube-songs suggestion:</h3>
-	  <div class="col-xs-6">
-        <a class="btn Emeli"href="https://www.youtube.com/watch?v=9TqUlGyWSEk"target="black">Emeli</a>
-        <a class="btn James"href="https://www.youtube.com/watch?v=oVslvM30EWI"target="black">James</a>
-        <a class="btn Imagine"href="https://www.youtube.com/watch?v=-C_rvt0SwLE"target="black">Imagine</a>
-		<div class="main">
-        
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-</html>
-</body>
+let price = 19.5;
+let cid = [
+  ["PENNY", 0.5],
+  ["NICKEL", 0],
+  ["DIME", 0],
+  ["QUARTER", 0],
+  ["ONE", 0],
+  ["FIVE", 0],
+  ["TEN", 0],
+  ["TWENTY", 0],
+  ["ONE HUNDRED", 0],
+];
+const notes = [0.01, 0.05, 0.1, 0.25, 1, 5, 10, 20, 100];
+
+const cashInput = document.getElementById("cash");
+const changeDue = document.getElementById("change-due");
+const purchaseBtn = document.getElementById("purchase-btn");
+
+const makePurchase = () => {
+  let cash = Number(cashInput.value);
+
+  if (!cash) {
+    changeDue.textContent = "";
+    return;
+  }
+
+  switch (true) {
+    case cash < price:
+      alert("Customer does not have enough money to purchase the item");
+      break;
+    case cash === price:
+      changeDue.textContent = "No change due - customer paid with exact cash";
+      break;
+    default:
+      let change = cash * 100 - price * 100;
+      let depletedNumberOfNotes = 0;
+      let changeDueTextContent = "";
+
+      for (let i = notes.length - 1; i >= 0; i--) {
+        if (cid[i][1] === 0) depletedNumberOfNotes++;
+
+        const note = notes[i] * 100;
+        const numberOfNotesToReturn = Math.trunc(change / note);
+        if (!numberOfNotesToReturn) continue;
+
+        const cashAmountOfNotesInCashDrawer = cid[i][1] * 100;
+        if (!cashAmountOfNotesInCashDrawer) continue;
+
+        const cashToReturnFromNote = Math.min(
+          numberOfNotesToReturn * note,
+          cashAmountOfNotesInCashDrawer
+        );
+
+        if (cashToReturnFromNote > 0) {
+          const cashToSubstract = cashToReturnFromNote / 100;
+          cid[i][1] -= cashToSubstract;
+          if (cid[i][1] === 0) depletedNumberOfNotes++;
+          changeDueTextContent += `${cid[i][0]}: $${cashToSubstract} `;
+          change -= cashToReturnFromNote; // change % note;
+        }
+      }
+
+      if (change) {
+        changeDueTextContent = "Status: INSUFFICIENT_FUNDS";
+      } else if (depletedNumberOfNotes === cid.length) {
+        changeDueTextContent = "Status: CLOSED " + changeDueTextContent;
+        // Status: CLOSED QUARTER: $0 DIME: $0 NICKEL: $0 PENNY: $0.5
+      } else {
+        changeDueTextContent = "Status: OPEN " + changeDueTextContent;
+      }
+
+      changeDue.textContent = changeDueTextContent;
+  }
+};
+
+purchaseBtn.addEventListener("click", makePurchase);
